@@ -1,0 +1,153 @@
+*{
+    margin : 0;
+}
+#intro{
+    background-image: url(../images/desk.jpg);
+    background-size: 100% 768px;
+    background-repeat: no-repeat;   
+    height : 620px; 
+}
+#head{
+    height : 620px;
+    width : 71%;
+    padding : 0 40px;
+    margin : auto;
+    text-align: center;
+}
+#logo{
+    padding : 30px 20px 0;
+    margin : 0 auto;
+    width :50%;
+}
+#logoImage{
+    width : 80px;
+}
+#quote{
+    width : 960px;
+    font-size : 50px;
+    padding : 140px 0 0;
+    font-family: 'Varela Round', sans-serif;
+    font-weight:600;
+    color : #FFF;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.click  {
+    
+    margin : 60px auto;
+    width : 300px;
+    text-align: center;
+  
+}
+
+a.button:link {
+    text-transform: uppercase;
+    text-decoration : none;
+    color : #FFF;
+    border : 2px solid #FDCD3B;
+    font-weight: 700;
+    font-size: 15px;
+    padding : 10px 20px; 
+    border-radius: 50px;
+    font-family : "Varela Round", sans-serif;
+}
+a.button:visited{
+    text-decoration: none;
+    color : #FFF;
+}
+a.button:hover{
+    color : #2A3A3F;
+    background-color: #FDCD3B;
+    border : 2px solid #FDCD3B; 
+}
+
+
+#more{
+    color : #FFF;
+    width : 300px;
+    margin : 60px auto;
+    font-family : "Varela Round", sans-serif;
+}
+
+
+.headText{
+    color : #2A3A3F;
+    text-align : center;
+    width : 50%;
+    padding : 0 20px;
+    margin : 0 auto;
+    font-weight : 500;
+    font-size : 40px;
+    font-family: "Ubuntu", sans-serif;
+}
+#headWork{
+    padding : 80px 0 80px;
+}
+
+.row-pad{
+    padding-bottom:150px;
+    margin : 0;
+}
+.title{
+    color : #000;
+    font-size : 28px;
+    text-align: center;
+}
+
+ .desc{ 
+ 
+    float : left;    
+    font-family : "Ubuntu", sans-serif;
+    line-height: 1.6;
+    font-size : 17px;
+    color : #868686;
+} 
+
+.buttonProject:link{
+    text-transform: uppercase;
+    text-decoration : none;
+    color : #FFF;
+    border : 2px solid #F04;
+    background-color: #F04;
+    font-weight: 500;
+    font-size: 15px;
+    padding : 10px 20px; 
+    border-radius: 50px;
+    font-family : "Varela Round", sans-serif;
+}
+.buttonProject:visited{
+    text-decoration: none;
+    color : #FFF;
+    border : 2px solid #F04; 
+    background-color: #F04;
+}
+.buttonProject:hover{
+    color : #2A3A3F;
+    background-color: #FDCD3B;
+    border :2px solid #F04;
+    text-decoration: none; 
+} 
+.buttonProject:active{
+    text-decoration: none;
+}
+
+#foot{
+    height : 250px;
+    background-color: #2A3A3F;
+    padding : 50px 0 20px;
+}
+
+#contact{
+    width : 500px;
+    text-align: center;
+    padding : 0 20px;
+    margin : 0 auto;
+}
+#footImage{
+    width : 50px;
+}
+#footnote{
+    font-size : "15px";
+    padding : 50px 0 ;
+}
+ 
