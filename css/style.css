@@ -5,7 +5,7 @@
     background-image: url(../images/desk.jpg);
     background-size: 100% 768px;
     background-repeat: no-repeat;   
-    height : 620px; 
+     height : 100%;
 }
 #head{
     height : 620px;
@@ -13,6 +13,7 @@
     padding : 0 40px;
     margin : auto;
     text-align: center;
+    
 }
 #logo{
     padding : 30px 20px 0;
@@ -32,12 +33,17 @@
     letter-spacing: 2px;
     line-height: 1.2;
 }
+.summary{
+    margin : 0 0 50px 0;
+}
+.button-row{
+    display : flex;
+}
 .click  {
-    
+    padding : 20px 0;
+    display: inline;
     margin : 60px auto;
-    width : 300px;
     text-align: center;
-  
 }
 
 a.button:link {
@@ -85,7 +91,7 @@ a.button:hover{
 }
 
 .row-pad{
-    padding-bottom:150px;
+    padding-bottom:140px;
     margin : 0;
 }
 .title{
@@ -111,7 +117,8 @@ a.button:hover{
     background-color: #F04;
     font-weight: 500;
     font-size: 15px;
-    padding : 10px 20px; 
+    padding : 10px 20px;
+    margin : 0 20px; 
     border-radius: 50px;
     font-family : "Varela Round", sans-serif;
 }
@@ -132,13 +139,17 @@ a.button:hover{
 }
 
 #foot{
-    height : 250px;
     background-color: #2A3A3F;
     padding : 50px 0 20px;
 }
+#footQuote{
+    padding: 30px 0 0 0;
+    font-family: "Ubuntu", sans-serif;
+    color : #FFF;
+}
 
 #contact{
-    width : 500px;
+    width : 100%;
     text-align: center;
     padding : 0 20px;
     margin : 0 auto;
@@ -149,5 +160,30 @@ a.button:hover{
 #footnote{
     font-size : "15px";
     padding : 50px 0 ;
+}
+#social-media{
+    padding : 50px 0 0 0;     
+}
+.icon{
+    display : inline;
+    text-align: center;
+    padding : 15px 15px;
+    margin : 0 15px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: #023;
+}
+.icon:hover{
+    background-color: darkgoldenrod;
+}
+.colorChange{
+    color : #FFF;
+    font-size: 20px;
+}
+#footnote{
+    font-family: "Ubuntu", sans-serif;
+    color : #FFF;
 }
  

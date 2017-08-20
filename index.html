@@ -8,21 +8,24 @@
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href = "./css/style.css"/>
         <link rel = "icon" href = "favicon.png"/>
     </head>
     <body>
-        <nav>
+        
+        <!-- <nav>
             <li>
 
             </li>
-        </nav>
+        </nav> -->
         <section id = "intro">
             <div id = "head">
                 <div id = "logo">
                     <img id = "logoImage" src = "./images/code_icon.png"/>
                 </div>
-                <p id = "quote">Hi I'm Manu.<br/> I build Full-Stack Web Applications</p>
+                <p id = "quote">Hi I'm Manu.<br/> I build Web Applications</p>
+                <br/>
                 <div class = "click">
                     <a class = "button" href = "#">Yes I'm available for hire</a>
                 </div>
@@ -43,14 +46,17 @@
                             </div>
                              <div class = "col-md-6 desc">
                                  <div class = "title">Altius-Sports</div>
-                                <div>
+                                <div class = "summary">
                                     Altius-Sports is sports equipment manufacturing company. Manufacturing equipments for schools, colleges, sports organisations. This project was built using KeystoneJS framework using MVT architecture
-                            </div>
+                                </div>
                                 <div class = "click">
                                     <a class = "buttonProject" href = "http://www.altiussports.com" target = "_blank">Visit Website</a>
+                                </div>
+                                <div class = "click">    
+                                    <a class = "buttonProject" href = "https://github.com/slayercoder/Altius-Sports/archive/master.zip" target = "_blank">Download Project</a>
                                 </div>  
+                            </div>
                         </div>
-                    </div>
             </div>
             <div class = "row row-pad">
                 <div class = "container">
@@ -59,12 +65,18 @@
                     </div>
                         <div class = "col-md-6 desc">
                             <div class = "title">Artisan</div>
-                        <div>
+                        <div class = "summary">
                             ARTISAN Furnishings Pvt Ltd develops and markets a broad range of commercial grade quality products for the Hospitality Industry, Corporate Buildings and Residential Market manufactured by the world’s leading manufacturers located in USA, Europe and Japan. This project was built using KeystoneJS framework using MVT architecture
                         </div>
-                        <div class = "click">
-                            <a class = "buttonProject" href = "http://148.72.253.221:3000" target = "_blank">Visit Website</a>
-                        </div>  
+                            <div class = "click">
+                                <a class = "buttonProject" href = "http://148.72.253.221:3000" target = "_blank">Visit Website</a>
+                            </div>
+                            <div class = "click">
+                                <a class = "buttonProject" href = "https://github.com/slayercoder/Artisan/archive/master.zip" target = "_blank">Download Project</a>
+                            </div>
+                            <!-- <div class = "click">
+                                <a class = "buttonProject" href = "https://github.com/slayercoder/Artisan" target = "_blank">Visit on Github</a>
+                            </div>                                                   -->
                     </div>
                 </div>
             </div>                
@@ -79,9 +91,16 @@
                     </div>
                     <div class = "col-md-6 desc">
                         <div class = "title">Jquery Based Calculator</div>
-                        <div>
+                        <div class = "summary">
                             This calculator right now calculates single digit operations, completely built using Jquery and HTML CSS(no Bootstrap class used)
                         </div>
+                        </div>
+                        <div class = "click">
+                            <a class = "buttonProject" href = "https://github.com/slayercoder/Jquery-based-Calculator/archive/master.zip" target = "_blank">Download Project</a>
+                        </div>
+                        <div class = "click">
+                            <a class = "buttonProject" href = "https://github.com/slayercoder/Jquery-based-Calculator" target = "_blank">Visit on Github</a>
+                        </div>                                                
                     </div>
                 </div>
             </div>
@@ -94,13 +113,9 @@
                     
                 </div>
             </div>
-            <div class = "row row-pad">
-                <div class = "col-md-6">
 
-                </div>
-                <div class = "col-md-6">
-                    
-                </div>
+            <div class = "row row-pad">
+                <div id = "headWork" class = "headText">Other Projects Uploading Soon</div>
             </div>                        
         </section>
         <footer id = "foot">
@@ -108,10 +123,17 @@
                 <div id = "logo">
                     <img id = "footImage" src = "./images/code_icon.png" width = "50px"/>
                 </div>
+                <div id = "footQuote">Follow Me</div>
+                <div id = "social-media">
+                            <a href = "https://github.com/slayercoder" target = "_blank" class = "icon"><i class = "fa fa-github fa colorChange" aria-hidden="true"></i></a>
+                            <a href = "https://twitter.com/4321_manu" target="_blank" class = "icon"><i class = "fa fa-twitter fa colorChange"></i></a>
+                            <a href = "https://www.linkedin.com/in/manu-saini-636aa1126/" target="_blank" class = "icon"><i class = "fa fa-linkedin fa colorChange"></i></a>       
+                </div>
                 <div id = "footnote">
-                    
+                    Made By Me &copy; <span id = "year"></span>
                 </div>
             </div>
         </footer>
+  <script src = "./js/script.js"></script>
     </body>
 </html>
