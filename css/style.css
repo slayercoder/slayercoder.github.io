@@ -8,8 +8,10 @@
     src: url("../fonts/Lato-Regular.ttf");
 }
 
+    /* Navbar CSS */
+    
 .navbar{
-    background-color: rgb(32, 46, 33);
+    background-color: #2C3E50;
     position: fixed;
     width : 100%;
     border : 0px;
@@ -37,8 +39,86 @@
 }
 
 .navbar ul li:hover{
-    background-color : rgb(95, 39, 148);
+    background-color : #8E44AD;
 }
+
+#hamburgerButton{
+    float: right;
+    font-size: 40px;
+    color: #FFF;
+    background-color: #2C3E50;
+    width: 90px;
+    height: 60px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    display: none;
+}
+#hamburgerButton:hover{
+    background-color: #FFF;
+    color : #000; 
+}
+
+#hamburgerDiv{
+    display: none;
+    position : fixed;
+    display: none;
+    float: left;
+    margin-left : 76%;
+    width : 25%;
+    height : 30%;
+    top : 60px;
+    z-index : 10;
+    background-color: #2C3E50
+}
+
+.pageSection{
+    text-align: center;
+    background-color : #2C3E50;
+    font-size: 20px;
+    color : #FFF;
+    font-family: "Lato", sans-serif;
+    padding : 20px 0;
+}
+
+.pageSection:hover{
+    background-color: #8E44AD;
+}
+
+/* Navbar responsive */
+
+@media(max-width:576px){
+    .navbar ul{
+        display: none;
+    }
+    #hamburgerButton{
+        display: block;
+    }
+    #hamburgerDiv{
+        /* display : none; */
+        /* position: unset; */
+    }
+    
+}
+/* 
+@media(min-width:768px){
+    .navbar ul{
+        display: block;
+    }
+    #hamburgerMenu{
+        display : none;
+    }
+}
+
+@media(min-width:992px){
+
+}
+
+@media(min-width:1200px){
+
+} */
+
+
 .name{
     display: inline-block;
     padding: 10px 5px;
@@ -67,7 +147,7 @@
 }
 
 #logo{
-    padding : 60px 20px 0;
+    padding : 100px 20px 0;
     margin : 0 auto;
     width :50%;
 }
@@ -75,14 +155,15 @@
     width : 80px;
 }
 #quote{
-    width : 960px;
-    font-size : 50px;
-    padding : 140px 0 0;
+    width: 960px;
+    font-size: 50px;
+    padding: 100px 0 15px;
     font-family: 'Varela Round', sans-serif;
-    font-weight:600;
-    color : #FFF;
+    font-weight: 600;
+    color: #FFF;
     letter-spacing: 2px;
     line-height: 1.2;
+    margin: 0 auto;
 }
 .summary{
     margin : 0 0 50px 0;
@@ -94,7 +175,6 @@
     padding : 20px 0;
     display: inline;
     margin : 60px auto;
-    text-align: center;
 }
 
 a.button:link {
@@ -122,7 +202,7 @@ a.button:hover{
 #more{
     color : #FFF;
     width : 300px;
-    margin : 60px auto;
+    margin : 90px auto;
     font-family : "Varela Round", sans-serif;
 }
 
