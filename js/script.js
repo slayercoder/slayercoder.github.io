@@ -5,6 +5,7 @@ span.textContent = date.getFullYear();
 
 var hamburgerButton = document.getElementById("hamburgerButton");
 var hamburgerDiv = document.getElementById("hamburgerDiv");
+
 var displayDiv = false;
 function hamClick(){
     displayDiv = !displayDiv;
@@ -17,3 +18,9 @@ function hamClick(){
     
 }
 hamburgerButton.addEventListener("click", hamClick);
+
+window.onresize = function(){
+    if(window.innerWidth > 576){
+        hamburgerDiv.setAttribute("style", "display : none");
+    }
+}
