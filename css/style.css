@@ -87,6 +87,9 @@
 .pageSection:hover{
     background-color: #8E44AD;
 }
+#hamburgerDiv a:link{
+    text-decoration: none;
+}
 
 /* Navbar responsive */
 
@@ -151,8 +154,14 @@
     margin : 0 auto;
 }
 #logoImage{
-    width : 80px;
+    width : 50px;
 }
+@media(max-width:576px){
+    #logoImage{
+        width : 50px;
+    }
+}
+
 #quote{
     display: block;
     width: 100%;
@@ -191,10 +200,6 @@
     #quote{
         font-size:20px;
         padding : 80px 0 15px;
-    }
-
-    #logoImage{
-        width : 60px;
     }
     #head{
         padding : 0;
@@ -398,7 +403,7 @@
     margin : 10px 10px;
     color : #FFF;
     font-family: "Open-Sans", sans-serif;
-    background-color : rgb(115, 0, 165);
+    background-color : #910085;
     border-radius : 6px;
 }
 
@@ -432,7 +437,7 @@
 }
 
 #foot{
-    background-color: #2A3A3F;
+    background-color: #2C3E50;
     padding : 50px 0 20px;
 }
 #footQuote{

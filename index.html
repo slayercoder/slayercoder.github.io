@@ -19,21 +19,21 @@
                     <img id = "sign" src = "./images/logo.png"/>
                     <ul>
                         <a href = "#"><li>Home</li></a>
-                        <a href = "#"><li>About</li></a>
+                        <!-- <a href = "#"><li>About</li></a> -->
                         <a href = "#projects"><li>Projects</li></a>
-                        <a href = "#"><li>Contact</li></a>
+                        <a href = "#contact"><li>Contact</li></a>
                     </ul>
 
                     <button id = "hamburgerButton" onclick = "hamClick"><span class = "fa fa-bars"></span></button>       
             </nav>
 
             
-                <div id = "hamburgerDiv">
-                    <div class = "pageSection">Home</div>
-                    <div class = "pageSection">About</div>
-                    <div class = "pageSection">Projects</div>
-                    <div class = "pageSection">Contact</div>
-                </div>
+            <div id = "hamburgerDiv">
+                <a href = "#" onclick = "hideDiv()"><div class = "pageSection">Home</div></a>
+                <!-- <div class = "pageSection">About</div> -->
+                <a href = "#projects" onclick = "hideDiv()"><div class = "pageSection">Projects</div></a>
+                <a href = "#contact" onclick = "hideDiv()"><div class = "pageSection">Contact</div></a>
+            </div>
             
             
 
@@ -65,7 +65,7 @@
                              <div class = "col-md-6 desc">
                                 <div class = "title">Altius-Sports</div>
                                 <div class = "summary">
-                                    Complete Nodejs based CMS   (Content-Management-System) built using KeystoneJS framework using MVT architecture for this sports equipment company.
+                                    A Nodejs based CMS   (Content-Management-System) built using KeystoneJS framework using MVT architecture for this sports equipment company.
                                 </div>
                                 <div class = "techDiv">
                                     <span class = "techUsed">
@@ -111,7 +111,7 @@
                         <div class = "col-md-6 desc">
                             <div class = "title">Artisan</div>
                         <div class = "summary">
-                            A complete Nodejs based CMS was built using KeystoneJS framework using MVT architecture
+                            A Nodejs based CMS(Content-Management-System) was built using KeystoneJS framework using MVT architecture
                         </div>
                         <div class = "techDiv">
                                 <span class = "techUsed">
