@@ -54,19 +54,15 @@
     outline: none;
     display: none;
 }
-#hamburgerButton:hover{
-    background-color: #FFF;
-    color : #000; 
-}
 
 #hamburgerDiv{
     display: none;
     position : fixed;
     display: none;
     float: left;
-    margin-left : 50%;   
-    width : 50%;
-    height : 100%;
+    margin-left : 60%;   
+    width : 40%;
+    height : 268px;
     top : 60px;
     z-index : 10;
     background-color: #2C3E50
@@ -80,6 +76,7 @@
     font-family: "Lato", sans-serif;
     padding : 20px 0;
     margin: -1px 0px;
+    cursor: pointer;
 }
 
 .pageSection:hover{
@@ -97,7 +94,6 @@
     }
     #hamburgerDiv{
         display : none;
-        /* position: unset; */
     }
     
 }
@@ -129,17 +125,15 @@
 
 #intro{
     background-image: url(../images/desk.jpg);
-    background-size: 100% 768px;
+    background-size: cover;
     background-repeat: no-repeat;   
     height : 100%;
 }
 #head{
     height : 620px;
-    width : 71%;
-    padding : 0 40px;
-    margin : auto;
+    padding : 0 20px;
+    margin : 0 auto;
     text-align: center;
-    
 }
 
 #sign{
@@ -148,18 +142,17 @@
 }
 
 #logo{
-    padding : 100px 20px 0;
+    padding : 75px 20px 0;
     margin : 0 auto;
-    width :50%;
 }
 #logoImage{
     width : 80px;
 }
 #quote{
-    display: none;
-    width: 960px;
-    font-size: 50px;
-    padding: 100px 0 15px;
+    display: block;
+    width: 100%;
+    font-size: 40px;
+    padding: 144px 0 15px;
     font-family: 'Varela Round', sans-serif;
     font-weight: 600;
     color: #FFF;
@@ -167,6 +160,42 @@
     line-height: 1.2;
     margin: 0 auto;
 }
+
+@media(min-width:992px) and (max-width: 1200px){
+    #quote{
+        font-size : 35px;
+    }
+    
+}
+
+@media(min-width: 768px) and (max-width : 991px){
+    #quote{
+        font-size : 30px;
+        padding : 100px 0 15px;
+    }
+}
+
+@media(min-width:577px) and (max-width:767px){
+    #quote{
+        font-size: 25px;
+        padding : 75px 0 15px;
+    }
+}
+
+@media(max-width:576px){
+    #quote{
+        font-size:20px;
+        padding : 80px 0 15px;
+    }
+
+    #logoImage{
+        width : 60px;
+    }
+    #head{
+        padding : 0;
+    }
+}
+
 .summary{
     margin : 0 0 50px 0;
 }
@@ -179,7 +208,7 @@
     margin : 60px auto;
 }
 
-a.button:link {
+.click a.button:link {
     text-transform: uppercase;
     text-decoration : none;
     color : #FFF;
@@ -190,16 +219,88 @@ a.button:link {
     border-radius: 50px;
     font-family : "Varela Round", sans-serif;
 }
-a.button:visited{
+.click a.button:visited{
     text-decoration: none;
     color : #FFF;
 }
-a.button:hover{
+.click a.button:hover{
     color : #2A3A3F;
     background-color: #FDCD3B;
     border : 2px solid #FDCD3B; 
 }
 
+@media(min-width : 992px) and (max-width:1200px){
+    .click a.button:link{
+        font-size: 13px;
+        text-decoration : none;
+        color : #FFF;
+        border : 2px solid #FDCD3B;
+    }
+    .click a.button:visited{
+        text-decoration: none;
+        color : #FFF;
+    }
+    .click a.button:hover{
+        color : #2A3A3F;
+        background-color: #FDCD3B;
+        border : 2px solid #FDCD3B; 
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .click a.button:link{
+        font-size: 13px;
+        text-decoration : none;
+        color : #FFF;
+        border : 2px solid #FDCD3B;
+    }
+    .click a.button:visited{
+        text-decoration: none;
+        color : #FFF;
+    }
+    .click a.button:hover{
+        color : #2A3A3F;
+        background-color: #FDCD3B;
+        border : 2px solid #FDCD3B; 
+    }
+}
+
+@media(min-width:577px) and (max-width:767px){
+    .click a.button:link{
+        font-size: 13px;
+        text-decoration : none;
+        color : #FFF;
+        border : 2px solid #FDCD3B;
+    }
+    .click a.button:visited{
+        text-decoration: none;
+        color : #FFF;
+    }
+    .click a.button:hover{
+        color : #2A3A3F;
+        background-color: #FDCD3B;
+        border : 2px solid #FDCD3B; 
+    }
+}
+
+@media(max-width:576px){
+    .click a.button:link{
+        font-size: 10px;
+        text-decoration : none;
+        color : #FFF;
+        border : 2px solid #FDCD3B;
+    }
+    .click a.button:visited{
+        text-decoration: none;
+        color : #FFF;
+    }
+    .click a.button:hover{
+        color : #2A3A3F;
+        background-color: #FDCD3B;
+        border : 2px solid #FDCD3B; 
+    }    
+
+}
 
 #more{
     color : #FFF;
@@ -208,6 +309,11 @@ a.button:hover{
     font-family : "Varela Round", sans-serif;
 }
 
+@media(max-width : 576px){
+    #more{
+        font-size: 12px;
+    }
+}
 
 .headText{
     color : #2A3A3F;
@@ -219,10 +325,10 @@ a.button:hover{
     font-size : 40px;
     font-family: "Ubuntu", sans-serif;
 }
+
 #headWork{
     padding : 80px 0 80px;
 }
-
 .row-pad{
     padding-bottom:140px;
     margin : 0;
