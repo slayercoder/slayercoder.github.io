@@ -20,7 +20,7 @@
                     <img id = "sign" src = "./images/logo.png"/>
                     <ul>
                         <a href = "#"><li>Home</li></a>
-                        <!-- <a href = "#"><li>About</li></a> -->
+                        <a href = "#about"><li>About</li></a>
                         <a href = "#projects"><li>Projects</li></a>
                         <a href = "#contact"><li>Contact</li></a>
                     </ul>
@@ -31,7 +31,7 @@
             
             <div id = "hamburgerDiv">
                 <a href = "#" onclick = "hideDiv()"><div class = "pageSection">Home</div></a>
-                <!-- <div class = "pageSection">About</div> -->
+                <a href = "#about" onclick = "hideDiv()"><div class="pageSection">About</div></a>
                 <a href = "#projects" onclick = "hideDiv()"><div class = "pageSection">Projects</div></a>
                 <a href = "#contact" onclick = "hideDiv()"><div class = "pageSection">Contact</div></a>
             </div>
@@ -46,7 +46,7 @@
                 <p id = "quote">Hi I'm Manu.<br/> I build Web Applications</p>
                 <br/>
                 <div class = "click">
-                    <a class = "button" href = "#">Yes I'm available for hire</a>
+                    <a class = "button" href = "#contact">Yes I'm available for hire</a>
                 </div>
                 <div id = "more">
                     Read more about my projects<br/>
@@ -55,14 +55,25 @@
             </div>
         </section>
 
+        <section id = "about">
+            <div id = "headWork" class = "headText">About Me</div>
+                <div class="col-md-12 desc">
+                    <div class="summary self">
+                        A web-developer based in Delhi, loves learning new technology and use it to solve problems, believes in knowledge sharing.
+                    </div>
+                </div>
+                    
+        </section>
+
             <!--New Section-->
         <section id = "projects">
             <div id = "headWork" class = "headText">My Work</div>
             <div class = "row row-pad">
                         <div class = "container">
-                            <div class = "col-md-6 col-sm-12">
-                                <!-- <img src = "./images/altius-project-1.png" width = "400px"/> -->
+                            <div class = "col-md-6 col-sm-12 text-center">
+                                <img src = "./images/alt.gif" class = "projectGif"/>
                             </div>
+                            <br/>
                              <div class = "col-md-6 desc">
                                 <div class = "title">Altius-Sports</div>
                                 <div class = "summary">
@@ -106,9 +117,10 @@
             </div>
             <div class = "row row-pad">
                 <div class = "container">
-                    <div class = "col-md-6 ">
-                        <!-- <img src = "./images/artisan-1.png" width = "400px"/> -->
+                    <div class = "col-md-6 text-center">
+                        <img src = "./images/art.gif" class = "projectGif"/>
                     </div>
+                    <br/>
                         <div class = "col-md-6 desc">
                             <div class = "title">Artisan</div>
                         <div class = "summary">
@@ -209,7 +221,7 @@
                 <div id = "logo">
                     <img id = "footImage" src = "./images/code_icon.png" width = "50px"/>
                 </div>
-                <div id = "footQuote">Follow Me</div>
+                <div id = "footQuote">Follow Me / Contact Me</div>
                 <div id = "social-media">
                             <a href = "https://github.com/slayercoder" target = "_blank" class = "icon"><i class = "fa fa-github fa colorChange" aria-hidden="true"></i></a>
                             <a href = "https://twitter.com/4321_manu" target="_blank" class = "icon"><i class = "fa fa-twitter fa colorChange"></i></a>

@@ -335,7 +335,7 @@
 }
 
 #headWork{
-    padding : 80px 0 80px;
+    padding : 80px 0;
     font-size : 40px;
 }
 
@@ -356,6 +356,21 @@
     padding-bottom: 80px;
     margin : 0;
 }
+
+.projectGif{
+    width : 325px;
+    padding : 5px;
+    border-radius : 3px;
+    border : 3px solid #BEBEBE;
+}
+
+@media(max-width : 576px){
+    .projectGif{
+        width : 100%;
+    }
+    
+}
+
 .title{
     color : #000;
     font-size : 20px;
@@ -376,6 +391,12 @@
 .summary{
     margin : 0 0 10px 0;
     font-size : 15px;
+}
+.self{
+    width: 80%;
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 auto 60px;
 }
 
 
