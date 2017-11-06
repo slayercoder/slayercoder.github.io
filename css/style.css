@@ -353,6 +353,11 @@
     }
 }
 
+.horizontal{
+    width : 80%;
+    margin : 0 auto 40px;
+    color : #585353;
+}
 
 .row-pad{
     padding-bottom: 80px;
