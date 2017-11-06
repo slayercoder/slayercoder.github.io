@@ -379,6 +379,18 @@
     width : 40%;
 }
 
+@media(min-width : 768px) and (max-width : 991px){
+    .rotate{
+        width : 25%;
+    }
+}
+
+@media(min-width: 577px) and (max-width: 767px){
+    .rotate{
+        width : 25%;
+    }
+}
+
 @-webkit-keyframes rotation {
     from {
         -webkit-transform: rotate(0deg);
@@ -410,10 +422,33 @@
     font-size : 15px;
 }
 .self{
-    width: 80%;
+    width: 60%;
     font-size: 20px;
-    text-align: justify;
     margin: 0 auto 60px;
+}
+
+
+
+@media(min-width : 768px) and (max-width : 991px){
+    .self{
+        font-size : 15px;
+        width : 70%;
+    }
+}
+
+@media(min-width : 577px) and (max-width : 767px){
+    .self{
+        font-size: 15px;
+        width : 80%;
+    }
+}
+
+@media(max-width : 576px){
+    .self{
+        font-size : 15px;
+        text-align: justify;
+        width : 85%;
+    }
 }
 
 
