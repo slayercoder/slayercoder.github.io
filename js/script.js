@@ -14,7 +14,7 @@ var { hamClick, hideDivOnTap } = (function(){
 
     var hideDivOnTap = function(element){
         if(displayDiv){
-            element.style.display = "none"
+            element.style.display = "none";
             displayDiv = false;
         }
     };
