@@ -25,6 +25,7 @@ var { hamClick, hideDivOnTap } = (function(){
 
 })();
 
+
 //  global variables
 var displayDiv, hamburgerButton, hamburgerDiv, hamburgerDivLinks, linkLen, span, date;
 
@@ -48,6 +49,14 @@ linkLen = hamburgerDivLinks.length;
 for(var i = 0; i < linkLen; i++){
     hamburgerDivLinks[i].onclick = hideDivOnTap.bind(this, hamburgerDiv);
 }
+
+// adding tap event globally in a window by capturing the event 
+window.addEventListener("click", function(){
+    if(displayDiv){
+        hamburgerDiv.setAttribute("style", "display : none");
+        displayDiv = false;
+    }
+},true);
 
 // removing the persisting hamburger menu
 window.onresize = function(){
