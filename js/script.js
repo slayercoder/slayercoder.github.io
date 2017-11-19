@@ -33,7 +33,6 @@ var  body, displayDiv, hamburgerButton, hamburgerDiv, hamburgerDivLinks, linkLen
 // adding tap event globally in a window by capturing the event 
 body = document.getElementsByTagName('body')[0];
 body.addEventListener("click", function(){
-    console.log("body clicked");
     if(displayDiv){
         hamburgerDiv.setAttribute("style", "display : none");
         displayDiv = false;
@@ -56,9 +55,7 @@ hamburgerDivLinks = document.querySelectorAll(".pageSection");
 // added an event listener to the 'div' selected above, also stopping the event bubbling
 hamburgerButton.onclick = function(event){
     event.stopPropagation();
-    console.log(displayDiv);
     hamClick.call(this, hamburgerDiv);
-    console.log(displayDiv);
 }
 
 // adding a event listener to every link in hamburger menu
@@ -82,4 +79,3 @@ window.onresize = function(){
 span = document.querySelector("#year");
 date = new Date();
 span.textContent = date.getFullYear();
-
