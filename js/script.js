@@ -54,8 +54,8 @@ hamburgerDiv = document.getElementById("hamburgerDiv");
 hamburgerDivLinks = document.querySelectorAll(".pageSection");
 
 // added an event listener to the 'div' selected above, also stopping the event bubbling
-hamburgerButton.onclick = function(e){
-    e.stopPropagation();
+hamburgerButton.onclick = function(event){
+    event.stopPropagation();
     console.log(displayDiv);
     hamClick.call(this, hamburgerDiv);
     console.log(displayDiv);
@@ -64,8 +64,8 @@ hamburgerButton.onclick = function(e){
 // adding a event listener to every link in hamburger menu
 linkLen = hamburgerDivLinks.length;
 for(var i = 0; i < linkLen; i++){
-    hamburgerDivLinks[i].onclick = function(e){
-        e.stopPropagation();
+    hamburgerDivLinks[i].onclick = function(event){
+        event.stopPropagation();
         hideDivOnTap.call(this, hamburgerDiv);
     }
 }
