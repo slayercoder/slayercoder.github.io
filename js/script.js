@@ -27,9 +27,14 @@ var { hamClick, hideDivOnTap } = (function(){
 })();
 
 //  global variables
-var  body, displayDiv, hamburgerButton, hamburgerDiv, hamburgerDivLinks, linkLen, span, date;
+var  body, displayDiv, loaderDiv, hamburgerButton, hamburgerDiv, hamburgerDivLinks, linkLen, span, date;
 
+/// loader while window is loading
+loaderDiv = document.getElementById("background-loader");
+window.onload = function(){
 
+    loaderDiv.setAttribute("style", "display:none");
+}
 
 
 

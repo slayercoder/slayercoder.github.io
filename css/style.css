@@ -134,6 +134,7 @@
 } */
 
 #background-loader{
+    display: none;
     overflow: hidden; 
     position: fixed;
     z-index: 100;
