@@ -133,15 +133,21 @@
 
 } */
 
-/* #background-loader{
-    background-image: url("./images/loader.gif");
-    background-size : "cover";
-    z-index : 100;
-    margin :  0 50%;
-    position : fixed;
+#background-loader{
+    overflow-y: hidden; 
+    position: fixed;
+    z-index: 100;
+    width : 100%;
     height : 100vh;
-    transform: translate(50%,50%);
-} */
+    background-color: #1EAC9C;
+    display: flex;
+    flex-direction: row;
+}
+#loader{
+    margin : auto;
+    align-items: center;
+    background-color: #FFF;
+}
 
 
 .name{

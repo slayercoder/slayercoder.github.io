@@ -30,6 +30,9 @@ var { hamClick, hideDivOnTap } = (function(){
 var  body, displayDiv, hamburgerButton, hamburgerDiv, hamburgerDivLinks, linkLen, span, date;
 
 
+
+
+
 // adding tap event globally in a window by capturing the event 
 body = document.getElementsByTagName('body')[0];
 body.addEventListener("click", function(){
