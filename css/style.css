@@ -134,7 +134,7 @@
 } */
 
 #background-loader{
-    overflow-y: hidden; 
+    overflow: hidden; 
     position: fixed;
     z-index: 100;
     width : 100%;
@@ -144,8 +144,8 @@
     flex-direction: row;
 }
 #loader{
-    margin : auto;
-    align-items: center;
+    margin : 0 auto;
+    align-self: center;
     background-color: #FFF;
 }
 
