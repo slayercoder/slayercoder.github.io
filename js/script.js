@@ -31,10 +31,10 @@ var  body, displayDiv, loaderDiv, hamburgerButton, hamburgerDiv, hamburgerDivLin
 
 /// loader while window is loading
 loaderDiv = document.getElementById("background-loader");
-// window.onload = function(){
+window.onload = function(){
 
-//     loaderDiv.setAttribute("style", "display:none");
-// }
+    loaderDiv.setAttribute("style", "display:none");
+}
 
 
 
