@@ -31,10 +31,9 @@ var  body, displayDiv, loaderDiv, hamburgerButton, hamburgerDiv, hamburgerDivLin
 
 /// loader while window is loading
 loaderDiv = document.getElementById("background-loader");
-// window.onload = function(){
-
-//     loaderDiv.setAttribute("style", "display:none");
-// }
+window.onload = function(){
+                    loaderDiv.setAttribute("style", "display:none");
+                }
 
 
 
@@ -62,17 +61,17 @@ hamburgerDivLinks = document.querySelectorAll(".pageSection");
 
 // added an event listener to the 'div' selected above, also stopping the event bubbling
 hamburgerButton.onclick = function(event){
-    event.stopPropagation();
-    hamClick.call(this, hamburgerDiv);
-}
+                              event.stopPropagation();
+                              hamClick.call(this, hamburgerDiv);
+                          }
 
 // adding a event listener to every link in hamburger menu
 linkLen = hamburgerDivLinks.length;
 for(var i = 0; i < linkLen; i++){
     hamburgerDivLinks[i].onclick = function(event){
-        event.stopPropagation();
-        hideDivOnTap.call(this, hamburgerDiv);
-    }
+                                       event.stopPropagation();
+                                       hideDivOnTap.call(this, hamburgerDiv);
+                                    }
 }
 
 // removing the persisting hamburger menu
