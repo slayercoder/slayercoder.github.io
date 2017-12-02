@@ -133,17 +133,16 @@
 
 } */
 #background-loader{
-    background-color: #FFF;
+    background-color: #2B3134;
     width : 100%;
-    align-items: center;  
+    display: flex;
     justify-content: center;
     position : fixed;
     height : 100vh;
-    display: flex;
     z-index: 1000;  
 }
 #loader{
-    position : absolute;
+    align-self: center;
     margin : 0 auto;
 }
 
