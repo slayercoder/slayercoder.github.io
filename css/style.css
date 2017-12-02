@@ -133,23 +133,19 @@
 
 } */
 #background-loader{
-    display: none;
-    overflow: hidden; 
-    position: fixed;
-    z-index: 100;
+    background-color: #1EAC9C;
     width : 100%;
+    align-items: center;  
+    justify-content: center;
+    position : fixed;
     height : 100vh;
-    background-color: #59ADA3;
     display: flex;
-    flex-direction: row;
+    z-index: 1000;  
 }
 #loader{
+    position : absolute;
     margin : 0 auto;
-    width: 50px;
-    align-self: center;
-    background-color: #1EAC9C;
 }
-
 
 .name{
     display: inline-block;
