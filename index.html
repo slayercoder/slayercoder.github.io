@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+    <head>
+        <title>Manu Saini</title>
+        <meta http-equiv="X-UA-Compatible" content = "IE=edge"/>
+        <meta charset="UTF-8"/>
+        <meta name = "viewport" content = "width=device-width" initial-scale="1.0, user-scalable=no, maximum-scale=1.0"/>
+        <meta name = "theme-color" content = "#2C3E50"/> 
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href = "./css/style.css"/>
+        <link rel = "icon" href = "favicon.png"/>
+    </head>
+    <body>
+            
+        <div id="background-loader">
+            <svg id = "loader" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="40px" height="30px" viewBox="-5 -5 40 30"  xml:space="preserve">
+              <rect x="0" y="0" width="4" height="20" fill="#FF6700">
+                <animate attributeName="opacity" attributeType="XML"
+                  values="1; .2; 1" 
+                  begin="0s" dur="1.0s" repeatCount="indefinite" />
+              </rect>
+              <rect x="7" y="0" width="4" height="20" fill="#FF6700">
+                <animate attributeName="opacity" attributeType="XML"
+                  values="1; .2; 1" 
+                  begin="0.2s" dur="1.0s" repeatCount="indefinite" />
+              </rect>
+              <rect x="14" y="0" width="4" height="20" fill="#FF6700">
+                <animate attributeName="opacity" attributeType="XML"
+                  values="1; .2; 1" 
+                  begin="0.4s" dur="1.0s" repeatCount="indefinite" />
+              </rect>
+              <rect x="21" y="0" width="4" height="20" fill="#FF6700">
+                    <animate attributeName="opacity" attributeType="XML"
+                      values="1; .2; 1" 
+                      begin="0.6s" dur="1.0s" repeatCount="indefinite" />
+              </rect>
+              <rect x="28" y="0" width="4" height="20" fill="#FF6700">
+                    <animate attributeName="opacity" attributeType="XML"
+                      values="1; .2; 1" 
+                      begin="0.8s" dur="1.0s" repeatCount="indefinite" />
+              </rect>
+            </svg>
+        </div>
+            
+        <nav class = "navbar">
+                <img id = "sign" src = "./images/logo.png"/>
+                <ul>
+                    <a href = "#"><li>Home</li></a>
+                    <a href = "#about"><li>About</li></a>
+                    <a href = "#projects"><li>Projects</li></a>
+                    <a href = "#contact"><li>Contact</li></a>
+                </ul>
+
+                <button id = "hamburgerButton"><span class = "fa fa-bars"></span></button>       
+        </nav>
+
+        
+        <div id = "hamburgerDiv">
+            <a href = "#"><div class = "pageSection">Home</div></a>
+            <a href = "#about"><div class="pageSection">About</div></a>
+            <a href = "#projects"><div class = "pageSection">Projects</div></a>
+            <a href = "#contact"><div class = "pageSection">Contact</div></a>
+        </div>
+            
+            
+
+        <section id = "intro">
+            <div id = "head">
+                <div id = "logo">
+                    <img id = "logoImage" src = "./images/code_icon.png"/>
+                </div>
+                <p id = "quote">Hi I'm Manu.<br/> I build Web Applications</p>
+                <br/>
+                <div class = "click">
+                    <a class = "button" href = "#contact">Yes I'm available for hire</a>
+                </div>
+                <div id = "more">
+                    Read more<br/>
+                    <a href = "#about"><i class = "fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id = "about">
+            <div id = "headWork" class = "headText">About Me</div>
+                <div class="col-md-12 desc">
+                    <div class="summary self">
+                        A web-developer based in Delhi, loves learning new technology and use it to solve problems, believes in knowledge sharing. Currently exploring and experimenting with front-end technology ReactJS, though comfortable with backend too. 
+                    </div>
+                </div>
+        </section>
+
+    <!--New Section-->
+        <section id = "projects">
+            <div id = "headWork" class = "headText">My Work</div>
+            <div class = "row row-pad">
+                <div class = "container">
+                    <div class = "col-md-6 col-sm-12 text-center">
+                        <img src = "./images/react.svg" class = "projectGif rotate"/>
+                    </div>
+                    <br/>
+                     <div class = "col-md-6 desc">
+                        <div class = "title">API-Driven Content-Aggregator</div>
+                        <div class = "summary">
+                            Currently working on a MERN stack end to end application based on microservice architecture(No preview)
+                        </div>
+                        <div class = "techDiv">
+                            <span class = "techUsed">
+                                MongoDb
+                            </span>
+                            <span class = "techUsed">
+                                ExpressJS
+                            </span>
+                            <span class = "techUsed">
+                                ReactJS
+                            </span>
+                            <span class = "techUsed">
+                                Nodejs
+                            </span>
+                            <span class = "techUsed">
+                                CSS3
+                            </span>
+                            <span class = "techUsed">
+                                JavaScript
+                            </span>
+                        </div>
+                        <!-- <div class = "click">
+                            <a class = "buttonProject" href = "http://www.altiussports.com" target = "_blank">Visit Website</a>
+                        </div>
+                        <div class = "click">    
+                            <a class = "buttonProject" href = "https://github.com/slayercoder/Altius-Sports/archive/master.zip" target = "_blank">Download Project</a>
+                        </div>   -->
+                    </div>
+                </div>
+            </div>
+
+            <hr class = "horizontal" />
+            
+            <div class = "row row-pad">
+                        <div class = "container">
+                            <div class = "col-md-6 col-sm-12 text-center">
+                                <img src = "./images/alt.gif" class = "projectGif"/>
+                            </div>
+                            <br/>
+                             <div class = "col-md-6 desc">
+                                <div class = "title">Altius-Sports</div>
+                                <div class = "summary">
+                                    A Nodejs based CMS   (Content-Management-System) built using KeystoneJS framework using MVT architecture.
+                                </div>
+                                <div class = "techDiv">
+                                    <span class = "techUsed">
+                                        Nodejs
+                                    </span>
+                                    <span class = "techUsed">
+                                        MongoDb
+                                    </span>
+                                    <span class = "techUsed">
+                                        ExpressJS
+                                    </span>
+                                    <span class = "techUsed">
+                                        KeystoneJS
+                                    </span>
+                                    <span class = "techUsed">
+                                        Jquery
+                                    </span>
+                                    <span class = "techUsed">
+                                        Pug
+                                    </span>
+                                    <span class = "techUsed">
+                                        CSS3
+                                    </span>
+                                    <span class = "techUsed">
+                                        Bootstrap
+                                    </span>
+
+                                </div>
+                                <!-- <div class = "click">
+                                    <a class = "buttonProject" href = "http://www.altiussports.com" target = "_blank">Visit Website</a>
+                                </div>
+                                <div class = "click">    
+                                    <a class = "buttonProject" href = "https://github.com/slayercoder/Altius-Sports/archive/master.zip" target = "_blank">Download Project</a>
+                                </div>   -->
+                            </div>
+                        </div>
+            </div>
+
+            <hr class = "horizontal" />
+
+            <div class = "row row-pad">
+                <div class = "container">
+                    <div class = "col-md-6 text-center">
+                        <img src = "./images/art.gif" class = "projectGif"/>
+                    </div>
+                    <br/>
+                        <div class = "col-md-6 desc">
+                            <div class = "title">Artisan</div>
+                        <div class = "summary">
+                            A Nodejs based CMS(Content-Management-System) was built using KeystoneJS framework using MVT architecture
+                        </div>
+                        <div class = "techDiv">
+                                <span class = "techUsed">
+                                    Nodejs
+                                </span>
+                                <span class = "techUsed">
+                                    MongoDb
+                                </span>
+                                <span class = "techUsed">
+                                    ExpressJS
+                                </span>
+                                <span class = "techUsed">
+                                    KeystoneJS
+                                </span>
+                                <span class = "techUsed">
+                                    Jquery
+                                </span>
+                                <span class = "techUsed">
+                                    Pug
+                                </span>
+                                <span class = "techUsed">
+                                    CSS3
+                                </span>
+                                <span class = "techUsed">
+                                    Bootstrap
+                                </span>
+
+                            </div>
+                            <!-- <div class = "click">
+                                <a class = "buttonProject" href = "http://128.199.83.170:3000" target = "_blank">Visit Website</a>
+                            </div>
+                            <div class = "click">
+                                <a class = "buttonProject" href = "https://github.com/slayercoder/Artisan/archive/master.zip" target = "_blank">Download Project</a>
+                            </div> -->
+                            <!-- <div class = "click">
+                                <a class = "buttonProject" href = "https://github.com/slayercoder/Artisan" target = "_blank">Visit on Github</a>
+                            </div>                                                   -->
+                    </div>
+                </div>
+            </div>                
+        </section>
+        <hr class = "horizontal" />
+        <section id = "personal">
+            <div id = "headWork" class = "headText">Personal Projects</div>  
+            <div class = "row row-pad">
+                <div class = "container">
+                    <div class = "col-md-6 text-center">
+                        <img src = "./images/cal.gif" class = "projectGif"/>
+                    </div>
+                    <div class = "col-md-6 desc">
+                        <div class = "title">Jquery Based Calculator</div>
+                        <div class = "summary">
+                            This calculator right now calculates single digit operations, completely built using Jquery and HTML CSS(no Bootstrap class used)
+                        </div>
+                        <div class = "techDiv">
+                                <span class = "techUsed">
+                                    Jquery
+                                </span>
+                                <span class = "techUsed">
+                                    HTML5
+                                </span>
+                                <span class = "techUsed">
+                                    CSS3
+                                </span>
+                                
+
+                            </div>
+                        </div>
+                        <!-- <div class = "click">
+                            <a class = "buttonProject" href = "https://github.com/slayercoder/Jquery-based-Calculator/archive/master.zip" target = "_blank">Download Project</a>
+                        </div>
+                        <div class = "click">
+                            <a class = "buttonProject" href = "https://github.com/slayercoder/Jquery-based-Calculator" target = "_blank">Visit on Github</a>
+                        </div>                                                 -->
+                    </div>
+                </div>
+            </div>
+
+            <hr class = "horizontal" />
+
+            <div class = "row row-pad">
+                <div class = "col-md-6">
+                    
+                </div>
+                <div class = "col-md-6">
+                    
+                </div>
+            </div>
+
+            <div class = "row row-pad">
+                <div id = "headWork" class = "headText">More Projects Coming Soon</div>
+            </div>                        
+        </section>
+        <footer id = "foot">
+            <div id = "contact">
+                <div id = "logo">   
+                    <img id = "footImage" src = "./images/code_icon.png" width = "50px"/>
+                </div>
+                <div id = "footQuote">Follow Me / Contact Me</div>
+                <div id = "social-media">
+                            <a href = "https://github.com/slayercoder" target = "_blank" class = "icon"><i class = "fa fa-github fa colorChange" aria-hidden="true"></i></a>
+                            <a href = "https://twitter.com/4321_manu" target="_blank" class = "icon"><i class = "fa fa-twitter fa colorChange"></i></a>
+                            <a href = "https://www.linkedin.com/in/manu-saini-636aa1126/" target="_blank" class = "icon"><i class = "fa fa-linkedin fa colorChange"></i></a>       
+                </div>
+                <div id = "footnote">
+                    Made By Me &copy; <span id = "year"></span>
+                </div>
+            </div>
+        </footer>
+        <script src = "./js/script.js"></script>
+    </body>
+</html>

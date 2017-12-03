@@ -1,0 +1,586 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+@font-face{
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Open-Sans";
+    src : url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Varela-Round";
+    src : url("../fonts/VarelaRound-Regular.ttf");
+}
+
+@font-face{
+    font-family : "Ubuntu";
+    src : url("../fonts/Ubuntu-Regular.ttf");
+}
+
+    /* Navbar CSS */
+    
+.navbar{
+    background-color: #2C3E50;
+    position: fixed;
+    width : 100%;
+    border : 0px;
+    font-family: "Lato", sans-serif;
+    color: #FFF;
+    z-index: 10;
+    border-radius: unset;
+}
+.navbar ul{
+    list-style: none outside none;
+    float: right;
+    padding : 0 10px 0 0;
+    margin : 6px 0 5px 0;
+}
+.navbar ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 10px 5px;
+    width : 100px;
+    font-size : 20px;
+}
+.navbar ul li {
+    text-decoration : none;
+    color : #FFF;
+}
+
+.navbar ul li:hover{
+    background-color : #8E44AD;
+}
+
+#hamburgerButton{
+    float: right;
+    font-size: 40px;
+    color: #FFF;
+    background-color: #2C3E50;
+    width: 90px;
+    height: 60px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    display: none;
+}
+
+#hamburgerDiv{
+    display: none;
+    position : fixed;
+    display: none;
+    float: left;
+    margin-left : 60%;   
+    width : 40%;
+    height : 268px;
+    top : 60px;
+    z-index : 10;
+    background-color: #2C3E50
+}
+
+.pageSection{
+    text-align: center;
+    background-color : #2C3E50;
+    font-size: 20px;
+    color : #FFF;
+    font-family: "Lato", sans-serif;
+    padding : 20px 0;
+    margin: -1px 0px;
+    cursor: pointer;
+}
+
+.pageSection:hover{
+    background-color: #8E44AD;
+}
+#hamburgerDiv a:link{
+    text-decoration: none;
+}
+
+/* Navbar responsive */
+
+@media(max-width:576px){
+    .navbar ul{
+        display: none;
+    }
+    #hamburgerButton{
+        display: block;
+    }
+    #hamburgerDiv{
+        display : none;
+    }
+    
+}
+/* 
+@media(min-width:768px){
+    .navbar ul{
+        display: block;
+    }
+    #hamburgerMenu{
+        display : none;
+    }
+}
+
+@media(min-width:992px){
+
+}
+
+@media(min-width:1200px){
+
+} */
+#background-loader{
+    background-color: #2B3134;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    position : fixed;
+    height : 100vh;
+    z-index: 1000;  
+}
+#loader{
+    align-self: center;
+}
+
+.name{
+    display: inline-block;
+    padding: 10px 5px;
+    margin : 0;
+}
+
+
+#intro{
+    background-image: url(../images/desk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    height : 100%;
+}
+
+#head{
+    height : 620px;
+    padding : 0 20px;
+    margin : 0 auto;
+    text-align: center;
+}
+
+#sign{
+    width: 50px;
+    margin: 5px 5px 5px 10px;
+}
+
+#logo{
+    padding : 75px 20px 0;
+    margin : 0 auto;
+}
+#logoImage{
+    width : 50px;
+}
+@media(max-width:576px){
+    #logoImage{
+        width : 50px;
+    }
+}
+
+#quote{
+    display: block;
+    width: 100%;
+    font-size: 40px;
+    padding: 163px 0 15px;
+    font-family: 'Varela-Round', sans-serif;
+    font-weight: 600;
+    color: #FFF;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin: 0 auto;
+}
+
+@media(min-width:992px) and (max-width: 1200px){
+    #quote{
+        font-size : 35px;
+        /* padding :  */
+    }
+    
+}
+
+@media(min-width: 768px) and (max-width : 991px){
+    #quote{
+        font-size : 30px;
+        padding : 100px 0 15px;
+    }
+}
+
+@media(min-width:577px) and (max-width:767px){
+    #quote{
+        font-size: 25px;
+        padding : 75px 0 15px;
+    }
+}
+
+@media(max-width:576px){
+    #quote{
+        font-size:20px;
+        padding : 80px 0 15px;
+    }
+    #head{
+        padding : 0;
+    }
+}
+
+
+.button-row{
+    display : flex;
+}
+.click  {
+    padding : 20px 0;
+    display: inline;
+    margin : 60px auto;
+}
+
+.click a.button:link {
+    text-transform: uppercase;
+    text-decoration : none;
+    color : #FFF;
+    border : 2px solid #FDCD3B;
+    font-weight: 700;
+    font-size: 15px;
+    padding : 10px 20px; 
+    border-radius: 50px;
+    font-family : "Varela-Round", sans-serif;
+}
+.click a.button:visited{
+    text-decoration: none;
+    color : #FFF;
+}
+.click a.button:hover{
+    color : #2A3A3F;
+    background-color: #FDCD3B;
+    border : 2px solid #FDCD3B; 
+}
+
+@media(min-width : 992px) and (max-width:1200px){
+    .click a.button:link{
+        font-size: 13px;
+        text-decoration : none;
+        color : #FFF;
+        border : 2px solid #FDCD3B;
+    }
+    .click a.button:visited{
+        text-decoration: none;
+        color : #FFF;
+    }
+    .click a.button:hover{
+        color : #2A3A3F;
+        background-color: #FDCD3B;
+        border : 2px solid #FDCD3B; 
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .click a.button:link{
+        font-size: 13px;
+        text-decoration : none;
+        color : #FFF;
+        border : 2px solid #FDCD3B;
+    }
+    .click a.button:visited{
+        text-decoration: none;
+        color : #FFF;
+    }
+    .click a.button:hover{
+        color : #2A3A3F;
+        background-color: #FDCD3B;
+        border : 2px solid #FDCD3B; 
+    }
+}
+
+@media(min-width:577px) and (max-width:767px){
+    .click a.button:link{
+        font-size: 13px;
+        text-decoration : none;
+        color : #FFF;
+        border : 2px solid #FDCD3B;
+    }
+    .click a.button:visited{
+        text-decoration: none;
+        color : #FFF;
+    }
+    .click a.button:hover{
+        color : #2A3A3F;
+        background-color: #FDCD3B;
+        border : 2px solid #FDCD3B; 
+    }
+}
+
+@media(max-width:576px){
+    .click a.button:link{
+        font-size: 10px;
+        text-decoration : none;
+        color : #FFF;
+        border : 2px solid #FDCD3B;
+    }
+    .click a.button:visited{
+        text-decoration: none;
+        color : #FFF;
+    }
+    .click a.button:hover{
+        color : #2A3A3F;
+        background-color: #FDCD3B;
+        border : 2px solid #FDCD3B; 
+    }    
+
+}
+
+#more{
+    color : #FFF;
+    width : 300px;
+    margin : 90px auto;
+    font-family : "Varela Round", sans-serif;
+}
+
+@media(max-width : 576px){
+    #more{
+        font-size: 12px;
+    }
+}
+
+.headText{
+    color : #2A3A3F;
+    text-align : center;
+    width : 50%;
+    padding : 0 20px;
+    margin : 0 auto;
+    font-weight : 500;
+    
+    font-family: "Ubuntu", sans-serif;
+}
+
+#headWork{
+    padding : 80px 0;
+    font-size : 40px;
+}
+
+@media(min-width : 576px) and (max-width : 768px){
+    #headWork{
+        font-size: 30px;
+    }
+}
+@media(max-width : 576px){
+    #headWork{
+        font-size : 30px;
+        padding : 50px 0 50px;
+    }
+}
+
+.horizontal{
+    width : 80%;
+    margin : 0 auto 40px;
+    color : #585353;
+}
+
+.row-pad{
+    padding-bottom: 80px;
+    margin : 0;
+}
+
+.projectGif{
+    width : 325px;
+    padding : 5px;
+    border-radius : 3px;
+    border : 3px solid #BEBEBE;
+}
+
+@media(max-width : 576px){
+    .projectGif{
+        width : 100%;
+    }
+    
+}
+
+.rotate{
+    -webkit-animation: rotation 7s infinite linear;
+    border : none;
+    width : 40%;
+}
+
+@media(min-width : 768px) and (max-width : 991px){
+    .rotate{
+        width : 25%;
+    }
+}
+
+@media(min-width: 577px) and (max-width: 767px){
+    .rotate{
+        width : 25%;
+    }
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+.title{
+    color : #000;
+    font-size : 20px;
+    padding : 0 0 10px 0;
+    text-align: center;
+    font-family: "Open-Sans", sans-serif;
+}
+
+ .desc{ 
+    float : left;    
+    font-family : "Open-Sans", sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    font-size : 17px;
+    color : #868686;
+} 
+
+.summary{
+    margin : 0 0 10px 0;
+    font-size : 15px;
+}
+.self{
+    width: 60%;
+    font-size: 20px;
+    margin: 0 auto 60px;
+}
+
+
+
+@media(min-width : 768px) and (max-width : 991px){
+    .self{
+        font-size : 15px;
+        width : 70%;
+    }
+}
+
+@media(min-width : 577px) and (max-width : 767px){
+    .self{
+        font-size: 15px;
+        width : 80%;
+    }
+}
+
+@media(max-width : 576px){
+    .self{
+        font-size : 15px;
+        text-align: justify;
+        width : 85%;
+    }
+}
+
+
+.techDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width : 100%;
+}
+
+@media(max-width:576px){
+    .techDiv{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width : 100%;
+    }
+}
+.techUsed{
+    /* flex-wrap:  */
+    font-size : 14px;
+    padding : 0 10px;
+    margin : 10px 10px;
+    color : #FFF;
+    font-family: "Open-Sans", sans-serif;
+    background-color : #910085;
+    border-radius : 6px;
+}
+
+.buttonProject:link{
+    text-transform: uppercase;
+    text-decoration : none;
+    color : #FFF;
+    border : 2px solid #F04;
+    background-color: #F04;
+    font-weight: 500;
+    font-size: 15px;
+    padding : 10px 20px;
+    margin : 0 20px; 
+    border-radius: 50px;
+    font-family : "Varela Round", sans-serif;
+}
+.buttonProject:visited{
+    text-decoration: none;
+    color : #FFF;
+    border : 2px solid #F04; 
+    background-color: #F04;
+}
+.buttonProject:hover{
+    color : #2A3A3F;
+    background-color: #FDCD3B;
+    border :2px solid #F04;
+    text-decoration: none; 
+} 
+.buttonProject:active{
+    text-decoration: none;
+}
+
+#foot{
+    background-color: #2C3E50;
+    padding : 50px 0 20px;
+}
+#footQuote{
+    padding: 30px 0 0 0;
+    font-family: "Ubuntu", sans-serif;
+    color : #FFF;
+}
+
+#contact{
+    width : 100%;
+    text-align: center;
+    padding : 0 20px;
+    margin : 0 auto;
+}
+#footImage{
+    width : 50px;
+}
+#footnote{
+    font-size : "15px";
+    padding : 50px 0 ;
+}
+#social-media{
+    padding : 50px 0 0 0;     
+}
+.icon{
+    display : inline;
+    text-align: center;
+    padding : 15px 15px;
+    margin : 0 15px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: #023;
+}
+.icon:hover{
+    background-color: darkgoldenrod;
+}
+.colorChange{
+    color : #FFF;
+    font-size: 20px;
+}
+#footnote{
+    font-family: "Ubuntu", sans-serif;
+    color : #FFF;
+}
+ 
